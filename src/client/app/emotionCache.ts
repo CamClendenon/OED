@@ -1,3 +1,7 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
+
 import createCache from '@emotion/cache';
 
 //creates the nonce for the script being run
@@ -6,7 +10,7 @@ const nonce = (document.querySelector('script[nonce]') as HTMLScriptElement | nu
 
 const emotionCache = createCache({
 	key: 'css',
-	nonce: nonce,
+	nonce: nonce
 });
 
 export default emotionCache;
